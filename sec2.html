@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Graphics and Animation Example</title>
+    <style>
+      /* Style for the container */
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      /* Style for the circle */
+      .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: red;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      /* Keyframe animation for pulsing effect */
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle"></div>
+    </div>
+  </body>
+</html>
